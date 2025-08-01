@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>For My Everything - Ibtihal 💖</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Playfair+Display:wght@300;400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="mobile.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <span class="theme-icon">🌙</span>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Section 1: Opening - "For My Everything" -->
+    <section id="opening" class="section opening-section">
+        <div class="container">
+            <div class="opening-content" data-aos="fade-up" data-aos-duration="2000">
+                <h1 class="main-title">
+                    <span class="title-line">To the girl who</span>
+                    <span class="title-line highlight">changed everything...</span>
+                    <span class="title-line name">Ibtihal</span>
+                </h1>
+                <div class="floating-hearts">
+                    <div class="heart heart-1">💖</div>
+                    <div class="heart heart-2">💕</div>
+                    <div class="heart heart-3">💗</div>
+                    <div class="heart heart-4">💝</div>
+                </div>
+                <button class="enter-btn" onclick="enterOurWorld()">
+                    <span>Enter Our World</span>
+                    <span class="btn-sparkle">✨</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Our Story -->
+    <section id="our-story" class="section story-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">
+                From Before life married couple to in life Classmates to Soulmates forever
+            </h2>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="story1.jpg" alt="School Days" loading="lazy">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>School Days</h3>
+                            <p>We sat near, but never spoke.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="story2.jpg" alt="Instagram Spark" loading="lazy">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Instagram Spark</h3>
+                            <p>One follow... and destiny began to whisper.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="story3.jpg" alt="Friends First" loading="lazy">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Friends First</h3>
+                            <p>Laughs, chats, deep late-night talks.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item special" data-aos="fade-left" data-aos-delay="400">
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="story4.jpg" alt="6 May 2025" loading="lazy">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>6 May 2025 💕</h3>
+                            <p>We finally confessed. We became us.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="story5.jpg" alt="Falling Deeper" loading="lazy">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Falling Deeper</h3>
+                            <p>We learned each other. Loved more.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="600">
+                    <div class="timeline-content">
+                        <div class="timeline-image">
+                            <img src="story6.jpg" alt="Now" loading="lazy">
+                        </div>
+                        <div class="timeline-text">
+                            <h3>Now</h3>
+                            <p>You're not just my girlfriend or my future wife. You're my person, my all.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Our Universe -->
+    <section id="our-universe" class="section universe-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">Just Us</h2>
+            
+            <div class="memory-grid">
+                <div class="memory-bubble" data-aos="zoom-in" data-aos-delay="100" onclick="openMemory('funny')">
+                    <img src="cute1.jpg" alt="Funny Moments" loading="lazy">
+                    <div class="bubble-overlay">
+                        <span>Funny Moments 😂</span>
+                    </div>
+                </div>
+
+                <div class="memory-bubble" data-aos="zoom-in" data-aos-delay="200" onclick="openMemory('screenshots')">
+                    <img src="cute2.jpg" alt="Cute Screenshots" loading="lazy">
+                    <div class="bubble-overlay">
+                        <span>Cute Screenshots 📱</span>
+                    </div>
+                </div>
+
+                <div class="memory-bubble text-bubble" data-aos="zoom-in" data-aos-delay="300" onclick="openMemory('petnames')">
+                    <div class="bubble-content">
+                        <h4>Our Names</h4>
+                        <p>Baby, Habibi, My Everything 💕</p>
+                    </div>
+                </div>
+
+                <div class="memory-bubble" data-aos="zoom-in" data-aos-delay="400" onclick="openMemory('dreams')">
+                    <img src="cute3.jpg" alt="Shared Dreams" loading="lazy">
+                    <div class="bubble-overlay">
+                        <span>Shared Dreams ✨</span>
+                    </div>
+                </div>
+
+                <div class="memory-bubble text-bubble" data-aos="zoom-in" data-aos-delay="500" onclick="openMemory('favorites')">
+                    <div class="bubble-content">
+                        <h4>Her Favorites</h4>
+                        <p>Cute dates, matching stuff, sweet surprises 🎀</p>
+                    </div>
+                </div>
+
+                <div class="memory-bubble" data-aos="zoom-in" data-aos-delay="600" onclick="openMemory('more')">
+                    <img src="cute4.jpg" alt="More Memories" loading="lazy">
+                </div>
+                    <div class="bubble-overlay">
+                        <span>More Memories 💖</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Secret Room -->
+    <section id="secret-room" class="section secret-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">My Mind, My Heart</h2>
+            
+            <div class="lock-container" data-aos="zoom-in" data-aos-delay="300">
+                <div class="lock" id="secretLock" onclick="unlockSecret()">
+                    <div class="lock-body">
+                        <div class="lock-shackle"></div>
+                        <div class="keyhole">🔐</div>
+                    </div>
+                    <p class="lock-hint">Click to unlock my heart</p>
+                </div>
+            </div>
+
+            <div class="secret-content" id="secretContent">
+                <div class="stars-bg"></div>
+                <div class="secret-message" data-aos="fade-up" data-aos-duration="2000">
+                    <p class="secret-text">
+                        Hey Ibtihal,
+                    </p>
+                    <p class="secret-text">
+                        Happy National Girlfriend Day...<br>
+                        Until the day I get to say "Happy Wife Day," my gorgeous, precious baby.
+                    </p>
+                    <p class="secret-text">
+                        I love you so deeply, my heart since the moment you entered my life, everything became brighter. You brought light, warmth, hope... and you made me glow. You made me want to be better not for the world, but for you. Just you.
+                    </p>
+                    <p class="secret-text">
+                        Since May 6th, 2025, my life hasn't been the same. You filled it with happiness. You inspired me. You pushed me without saying a word just by being you. I work harder now, I dream louder, I chase more... because I want to build a life for us. A future. I want us to stand one day in front of the world, hand in hand, smiling because we made it.<br>
+                        And I'll kiss you with pride and say, "She's mine. I'm the luckiest man alive."
+                    </p>
+                    <p class="secret-text">
+                        With you, everything in me feels right.
+                    </p>
+                    <p class="secret-text">
+                        I adore you, baby. Every second I spend with you I treasure it. Your laugh, your voice, your mood swings, and everything fr. I crave so much to hug you baby and make us feel each other safety.<br>
+                        When you're my little baby, my tiny girl I just want to spoil you, protect you, hold you like you're made of stardust.<br>
+                        And when you're bold and wild and free... oh, I love it even more. Your fire drives me crazy. Your honesty, your openness, the way you tell me everything — from your day to your silly thoughts I love it all, Ibtihal.
+                    </p>
+                    <p class="secret-text">
+                        Every chat. Every night. Every second.<br>
+                        When we talk, when we laugh, when we share those silly reels or tease each other I'm obsessed with everything we have. Even our little GIFs and dreams... they mean the world to me.
+                    </p>
+                    <p class="secret-text">
+                        With you, I discovered what love really is. What it feels like.<br>
+                        You're my definition of romance. Of partnership.<br>
+                        You're the light when I'm lost... my strength when I'm weak.
+                    </p>
+                    <p class="secret-text">
+                        I always reread our chats, relisten to your voice, replay our moments in my head...<br>
+                        I ask myself: did she feel loved today? Did I protect her heart enough?
+                    </p>
+                    <p class="secret-text">
+                        I love everything about you. Your habits. Your spirit.<br>
+                        I'm so proud of you, baby.<br>
+                        You cook, you clean, you train, you take care of your family, and you still find time to give me love, to support me. You amaze me. You're powerful, yet soft. Gentle, yet fierce. You're truly a wonder.
+                    </p>
+                    <p class="secret-text">
+                        I imagine us together all the time. Waking up to your eyes. Holding you as we sleep.<br>
+                        Eating breakfast together. Doing chores. Playing. Laughing.<br>
+                        Going on dates, showering side by side, kissing, walking under the stars, eating ice cream, cooking dinner.<br>
+                        Being face to face, skin to skin, lip to lip... fully connected in every way.
+                    </p>
+                    <p class="secret-text">
+                        I imagine our first little pets. Our warm home. Our married life safe, peaceful, and filled with joy.<br>
+                        And me always taking care of you. Loving you deeper every day. Never letting you feel alone.
+                    </p>
+                    <p class="secret-text">
+                        I will always be grateful for you, Ibtihal.<br>
+                        You are the best thing that ever happened to me.<br>
+                        Thank you... for making the first move when I was too shy.<br>
+                        Thank you for loving me. For helping me become a better man — a man who feels strong, masculine, alive... with you.
+                    </p>
+                    <p class="secret-text">
+                        I promise I'll do everything I can to give you the life you dream of and more.<br>
+                        To treat you like the queen you are.
+                    </p>
+                    <p class="secret-text">
+                        I love you endlessly.<br>
+                        I never get enough of you.<br>
+                        Happy National Girlfriend Day, my queen.
+                    </p>
+                    <p class="secret-text">
+                        I love you — now and forever.
+                    </p>
+                    <div class="signature">— Your Haithem 💕</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: The Future -->
+    <section id="the-future" class="section future-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-down">What I Dream With You</h2>
+            
+            <div class="avatars" data-aos="zoom-in" data-aos-delay="200">
+                <div class="avatar haithem">👨‍💼</div>
+                <div class="heart-between">💕</div>
+                <div class="avatar ibtihal">👩‍💼</div>
+            </div>
+
+            <div class="dreams-constellation">
+                <div class="dream-star" data-aos="fade-in" data-aos-delay="300" onclick="openDream('home')">
+                    <span class="star">🏠</span>
+                    <span class="dream-label">Our Home</span>
+                </div>
+
+                <div class="dream-star" data-aos="fade-in" data-aos-delay="400" onclick="openDream('marriage')">
+                    <span class="star">💍</span>
+                    <span class="dream-label">Marriage</span>
+                </div>
+
+                <div class="dream-star" data-aos="fade-in" data-aos-delay="500" onclick="openDream('kids')">
+                    <span class="star">👶</span>
+                    <span class="dream-label">HI Family</span>
+                </div>
+
+                <div class="dream-star" data-aos="fade-in" data-aos-delay="600" onclick="openDream('travel')">
+                    <span class="star">✈️</span>
+                    <span class="dream-label">Traveling</span>
+                </div>
+
+                <div class="dream-star" data-aos="fade-in" data-aos-delay="700" onclick="openDream('cooking')">
+                    <span class="star">👩‍🍳</span>
+                    <span class="dream-label">Cooking Together</span>
+                </div>
+
+                <div class="dream-star" data-aos="fade-in" data-aos-delay="800" onclick="openDream('old')">
+                    <span class="star">👴👵</span>
+                    <span class="dream-label">Growing Old</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Finale -->
+    <section id="finale" class="section finale-section">
+        <div class="container">
+            <div class="finale-content">
+                <div class="fireworks" id="fireworks"></div>
+                <div class="love-letter" data-aos="fade-up" data-aos-duration="3000">
+                    <h2 class="finale-title">To Ibtihal, Forever</h2>
+                    <div class="letter-text" id="letterText">
+                        <p class="letter-line">Ibtihal... you're my once in a lifetime.</p>
+                        <p class="letter-line">Thank you for letting me love you.</p>
+                        <p class="letter-line">I'm never letting go.</p>
+                    </div>
+                    <div class="signature-final">
+                        With all my love,<br>
+                        <span class="name-signature">Haithem</span> 💖
+                    </div>
+                </div>
+                
+                <button class="replay-btn" onclick="replayMagic()">
+                    <span>Replay the Magic</span>
+                    <span class="btn-sparkle">💖</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Modal -->
+    <div class="modal" id="memoryModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Dream Modal -->
+    <div class="modal" id="dreamModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDreamModal()">&times;</span>
+            <div class="modal-body" id="dreamModalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="interactions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

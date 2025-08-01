@@ -1,0 +1,521 @@
+/* ===== ROMANTIC ANIMATIONS & EFFECTS ===== */
+
+/* ===== KEYFRAME ANIMATIONS ===== */
+
+/* Floating Hearts Animation */
+@keyframes floatHeart {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translateY(-20px) rotate(5deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-10px) rotate(-3deg);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translateY(-30px) rotate(8deg);
+    opacity: 0.9;
+  }
+}
+
+/* Sparkle Animation */
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.2) rotate(90deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(0.8) rotate(180deg);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.1) rotate(270deg);
+    opacity: 0.9;
+  }
+}
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Twinkle Animation */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In Down Animation */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide In Left Animation */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide In Right Animation */
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Zoom In Animation */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Rotate In Animation */
+@keyframes rotateIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-200deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px var(--primary-pink);
+  }
+  50% {
+    box-shadow: 0 0 40px var(--primary-pink), 0 0 60px var(--secondary-lavender);
+  }
+}
+
+/* Typewriter Animation */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blink Animation for Cursor */
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Firework Animation */
+@keyframes firework {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.5) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Particle Float Animation */
+@keyframes particleFloat {
+  0% {
+    transform: translateY(100vh) translateX(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) translateX(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Shake Animation */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+/* Swing Animation */
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+/* ===== SPECIAL EFFECTS ===== */
+
+/* Gradient Text Animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(-45deg, #FFB6C1, #E6E6FA, #F5DEB3, #FFB6C1);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* Floating Particles */
+.floating-particle {
+  position: absolute;
+  pointer-events: none;
+  animation: particleFloat 8s linear infinite;
+}
+
+.floating-particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+.floating-particle:nth-child(2) { left: 20%; animation-delay: 1s; }
+.floating-particle:nth-child(3) { left: 30%; animation-delay: 2s; }
+.floating-particle:nth-child(4) { left: 40%; animation-delay: 3s; }
+.floating-particle:nth-child(5) { left: 50%; animation-delay: 4s; }
+.floating-particle:nth-child(6) { left: 60%; animation-delay: 5s; }
+.floating-particle:nth-child(7) { left: 70%; animation-delay: 6s; }
+.floating-particle:nth-child(8) { left: 80%; animation-delay: 7s; }
+
+/* Hover Effects */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px var(--shadow-soft);
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.hover-pulse {
+  transition: all 0.3s ease;
+}
+
+.hover-pulse:hover {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+/* Loading Animation */
+.loading-heart {
+  display: inline-block;
+  animation: heartbeat 1s ease-in-out infinite;
+}
+
+/* Text Reveal Animation */
+.text-reveal {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--primary-pink);
+  animation: typewriter 3s steps(40) 1s forwards, blink 1s step-end infinite;
+}
+
+/* Stagger Animation for Lists */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.1s; }
+.stagger-item:nth-child(2) { animation-delay: 0.2s; }
+.stagger-item:nth-child(3) { animation-delay: 0.3s; }
+.stagger-item:nth-child(4) { animation-delay: 0.4s; }
+.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Morphing Heart */
+.morphing-heart {
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.morphing-heart:hover {
+  transform: scale(1.3);
+  filter: hue-rotate(45deg);
+}
+
+/* Ripple Effect */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 182, 193, 0.5);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.ripple:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Parallax Elements */
+.parallax-slow {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.parallax-medium {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.parallax-fast {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Entrance Animations */
+.entrance-fade {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.entrance-slide-left {
+  opacity: 0;
+  animation: slideInLeft 1s ease forwards;
+}
+
+.entrance-slide-right {
+  opacity: 0;
+  animation: slideInRight 1s ease forwards;
+}
+
+.entrance-zoom {
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+}
+
+.entrance-rotate {
+  opacity: 0;
+  animation: rotateIn 1s ease forwards;
+}
+
+/* Continuous Animations */
+.continuous-float {
+  animation: floatHeart 4s ease-in-out infinite;
+}
+
+.continuous-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.continuous-glow {
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+.continuous-twinkle {
+  animation: twinkle 2s ease-in-out infinite alternate;
+}
+
+/* Interactive Animations */
+.click-bounce {
+  transition: all 0.1s ease;
+}
+
+.click-bounce:active {
+  transform: scale(0.95);
+}
+
+.click-shake {
+  transition: all 0.1s ease;
+}
+
+.click-shake:active {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Love-themed Animations */
+.love-pulse {
+  animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+.love-float {
+  animation: floatHeart 6s ease-in-out infinite;
+}
+
+.love-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.love-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Responsive Animation Controls */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Performance Optimizations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.smooth-animation {
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Custom Easing Functions */
+.ease-romantic {
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.ease-bounce {
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.ease-smooth {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
